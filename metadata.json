@@ -1,0 +1,6 @@
+{
+  "name": "Paws & Play",
+  "description": "Um pet shop virtual super fofinho e chamativo com acompanhamento de humor dos pets, agendamento de spa e creche, lojinha de mimos e assistente inteligente da Dra. Miauravilha!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

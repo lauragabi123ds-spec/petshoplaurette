@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #630ed4;
+  --color-primary-light: #7c3aed;
+  --color-secondary-yellow: #fed01b;
+  --color-secondary-on: #6f5900;
+  --color-cream: #fbf9f1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf9f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc3d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7b7487;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fbf9f1;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+}
+
+/* Elegant glassmorphic background support */
+.login-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.tinted-shadow {
+  box-shadow: 0 10px 40px -10px rgba(124, 58, 237, 0.15);
+}
+
+/* Bounce and pulse effects */
+@keyframes cute-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-cute-bounce {
+  animation: cute-bounce 2s infinite ease-in-out;
+}
+
